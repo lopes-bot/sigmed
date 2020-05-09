@@ -4,6 +4,6 @@ Plataforma de gereciamento de clínicas e Consultorios Médicos
 Node.js,React.js e PostgreSQL
 ### protótipo
 <figure>
-  <img src="./img/tela inicial.png" alt="Tela Inicial" width="320" height="205">	
+  <img src="./img/tela inicial.png" alt="Tela Inicial" width="100" height="300">	
   <figcaption>Tela Inicial</figcaption>
 </figure>
