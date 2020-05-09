@@ -1,0 +1,82 @@
+.img{
+    margin-top: 100px;
+    width: 600px;
+    height: 600px;
+    
+
+}
+.cardw{
+    width: 500px;
+    height: 700px;
+    margin-top: 100px;
+}
+.cardw,h4{
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #4673B7;
+    padding: 10px;
+}
+.cardw,h6{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #636161;
+    padding: 10px;
+}
+.cardw,p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #4673B7;
+    padding: 10px;
+    
+}
+.but2{
+
+    width: 100px;
+    height: 30px;
+    background: #107A88;
+    border-radius: 20px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+
+    color: #FDF4F4;
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    margin-left: 15px;
+    
+
+}
+.but2:hover{
+    color: #107A88;
+    background: rgba(191, 226, 250, 0.81);
+}
+.cardI{
+    
+    width: 400px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #B4B4B4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding-left: 15px;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    margin-left: 15px;
+    
+}
