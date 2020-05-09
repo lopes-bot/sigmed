@@ -1,0 +1,31 @@
+.navbar2{
+
+    background: #107A88;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+   
+
+}
+.but{
+    
+
+    width: 100px;
+    height: 30px;
+    background: rgba(253, 253, 253, 0.81);
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    color: #107A88;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 5px;
+}
+.but:hover{
+    background-color: rgba(50, 189, 207, 0.5);
+    color: white;
+
+}

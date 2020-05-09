@@ -4,7 +4,7 @@
   "description": "Api Utilizada para Manipular dados do Sistema",
   "main": "App.js",
   "scripts": {
-    "test": "nodemon App.js"
+    "start":"nodemon App.js"
   },
   "author": "André Lopes",
   "license": "ISC",
