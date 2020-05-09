@@ -6,7 +6,7 @@ export default class navbar extends Component {
     render() {
         return (
             <div>
-               <nav className="navbar navbar-expand-lg navbar-dark navbar2">
+               <nav className="navbar fixed-top navbar-expand-lg navbar-dark navbar2">
 
                 <div className="container">
                     <Link className="navbar-brand " to ="">SigMed</Link>
