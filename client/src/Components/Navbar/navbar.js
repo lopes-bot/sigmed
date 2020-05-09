@@ -34,11 +34,11 @@ export default class navbar extends Component {
 
                     
                         </ul>
-                        <form className="form-inline ml-3 my-2 my-lg-0">
-                         <button className="btn btn-outline but my-2 my-sm-0" type="submit">Entrar</button>
+                        <form className="form-inline my-2 my-lg-0  ml-sm-0 ml-lg-3 ">
+                         <button className="btn btn-outline  but my-sm-0 " type="submit">Entrar</button>
                         </form>
                         
-                    </div>
+                    </div> 
 
                 </div>
               
