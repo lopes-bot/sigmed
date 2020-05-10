@@ -4,11 +4,11 @@ import './bodycomp.css';
 export default class bodycomp extends Component {
     render() {
         return (
-            <div className="row ">
-                 <div  className="col-4  ">
+            <div >
+                 <div  className="rounded float-left ">
                      <img className="img2" src="img/nova.png" alt=""/>
                  </div>
-                 <div  className="col-5 " >
+                 <div  className="rounded float-right mr-sm-5 " >
                  <div className=" cardw" > 
                             <h4 id="bodycomph4">Conheça melhor o SigMed e veja o que podemos
                              fazer para o sucesso do seu consutório e clínica</h4>

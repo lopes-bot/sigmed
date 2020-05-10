@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './bodyclin.css';
 import Bodycomp from '../bodycomp/bodycomp';
-
+import Faixa from '../faixa/faixa';
 export default class bodyclin extends Component {
     render() {
         return (
@@ -13,7 +13,7 @@ export default class bodyclin extends Component {
                     </div>
                     <div className="float-left">
                         <div className=" cardw" > 
-                            <h4 id="bodyclinh4">SoftWare para Consultório e Clínicas Médicas</h4>
+                            <h4 id="bodyclinh4">SoftWare Para Consultório e Clínicas Médicas</h4>
                             <h6 id="bodyclinh6">Sistema para Gerenciamento de Clínicas e consultórios Médicos.  Controle e Organização de qualquer lugar. </h6> 
                             <p id="bodyclinp">Veja o que o SigMed pode fazer por você faça um teste grátis</p>
 
@@ -38,21 +38,17 @@ export default class bodyclin extends Component {
                                 </form>
                         </div>
                     </div>
-
                   
                </div>
 
-               <div className="row faixa col-12">
-                        <div className="faixa">
-                                <h4 id="faixah4">Tecnologia, Mobilidade, Organização e gestão em nosso 
-                                    sistema para sua Clínica e Consultório. </h4>
-                        </div>
-                 </div>
+               <Faixa />
+               <div className="container">
+                    <Bodycomp />    
+               </div>
+               
+              
+               
 
-                 <Bodycomp />
-
-
-           
 
             </div>
 
