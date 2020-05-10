@@ -10,10 +10,17 @@
 }
 #peh6{
     text-align: center;
+    padding-top: 30px;
     margin: 20px;
     width: 300px;
     color: #ffffff;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
+}
+.ico{
+   align-items: center;
+   margin-top: 100px;
+    margin-left: 70px;
+    
 }
