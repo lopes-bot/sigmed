@@ -1,16 +1,16 @@
-.img{
+.img2{
     margin-top: 100px;
-    width: 600px;
-    height: 600px;
-    
+    width: 500px;
+    height: 600px;  
 
 }
 .cardw{
     width: 500px;
     height: 700px;
-    margin-top: 100px;
+    margin-top: 200px;
+   
 }
-#bodyclinh4{
+#bodycomph4{
 
     font-family: Roboto;
     font-style: normal;
@@ -19,9 +19,10 @@
     line-height: 42px;
     color: #4673B7;
     padding: 10px;
-  
+    text-align: center;
+   
 }
-#bodyclinh6{
+#bodycomph6{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -29,22 +30,16 @@
     line-height: 28px;
     color: #636161;
     padding: 10px;
+    text-align: center;
 }
-#bodyclinp{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    
-    color: #4673B7;
-    padding: 10px;
-    
-}
-.but2{
 
-    width: 100px;
+#but{
+
+    
+    width: 300px;
     height: 30px;
+    
+    
     background: #107A88;
     border-radius: 20px;
     
@@ -58,18 +53,16 @@
     margin-top: 20px;
     position: relative;
     display: block;
-    margin-left: 15px;
+    margin-left: 100px;
     border-bottom: #107A88;
     border: #107A88;
 
-    
-
 }
-.but2:hover{
+#but:hover{
     color: #107A88;
     background: rgba(220, 232, 240, 0.81);
 }
-.cardI{
+.cardt{
     
     width: 400px;
     height: 30px;
@@ -81,27 +74,7 @@
     font-size: 14px;
     position: relative;
     display: block;
-    margin-left: 15px;
+    margin-left: 50px;
     
 }
-.faixa{
-    margin: 0;
-    background: #1F8399;
-    height: 300px;
-   width: max-content;
-   margin-right: -40px;
-    
-}
-#faixah4{
-    margin: 20px;
-    margin-top: 80px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    padding: 20px;
-    color: #DFE5EE;
-    
-}
+ 
