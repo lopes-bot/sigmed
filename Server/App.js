@@ -1,7 +1,11 @@
 const express = require('express');
+require("./src/database/index");
+
 
 const app = express();
 
+
+app.use(express.urlencoded({extended:false}))
 
 
 
