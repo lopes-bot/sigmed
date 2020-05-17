@@ -1,5 +1,24 @@
 const User = require("../model/user");
 const bcrypt = require("bcryptjs");
+const JWT = require("jsonwebtoken");
+const { JWT_SECRET } = require("../config/index");
+
+signToken = (user) => {
+    return JWT.sign(
+      {
+        iss: "CodeWorkr",
+        sub: user.id,
+        iat: new Date().getTime(),
+        exp: new Date().setDate(new Date().getDate() + 1),
+      },
+      JWT_SECRET
+    );
+  };
+
+
+
+
+
 
  module.exports = {
 

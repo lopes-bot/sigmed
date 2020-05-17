@@ -25,6 +25,13 @@ module.exports = {
       img: {
         type: Sequelize.STRING,
       },
+      telefone:{
+        type:Sequelize.STRING,
+      },
+      
+      social_id:{
+        type:Sequelize.STRING,
+      },
 
       created_at: {
         type: Sequelize.DATE,
