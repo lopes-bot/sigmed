@@ -1,16 +1,48 @@
 const express = require('express');
+const app = express();
 require("./src/database/index");
 
 const AdminUser = require('./router/User');
-const bodyParser = require("body-parser");
+//const bodyParser = require("body-parser");
+const session = require("express-session");
+const passport = require("passport");
+require('./src/auth/passport')(passport);
 
 
-const app = express();
+
+
+
+
+//sessão
+app.use(
+    session({
+      secret: "SigMed",
+      resave: true,
+      saveUninitialized: true,
+    })
+  );
+  app.use(passport.initialize());
+  app.use(passport.session());
+ 
+  
+
+
+
+
 
 
 app.use(express.urlencoded({extended:false}))
 app.use(express.json());
 
+
+
+//middleware
+app.use((req, res, next) => {
+ 
+    res.locals.user = req.user || null; //dados do usuario autenticado pelo passport e armazenado nessa variavel global
+    next();
+ });
+  
 
 
 
