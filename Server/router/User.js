@@ -15,6 +15,15 @@ Router.post("/user/cria",UserController.store);
 //router.router("/user/list").get(User)
 
 //--------------------------------------------------------//
+ //rota para login do usuario com o facebook
+
+ Router
+ .route("/auth/facebook")
+ .post(
+   passport.authenticate("facebookToken", { session: false }),
+   UserController.facebookoAuth
+ );
+
 //rota para login de usuario com atenticação local do banco de dados da MOP
       //rota para autenticação do login usando o passport com estrategia local
 
