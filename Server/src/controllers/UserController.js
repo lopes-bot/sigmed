@@ -58,13 +58,23 @@ signToken = (user) => {
                 return res.json(user);
             }, //metodo usado para criar usuarios
 //------------------------------------------------------------------------------------//
- //-----------------------------------------------//
- facebookoAuth: async (req, res, next) => {
-    // console.log("funciona");
-    //console.log(req.user);
-    const token = signToken(req.user);
-    res.status(200).json({ token });
-  }, //controle de autenticação por facebook
-//-----------------------------------------------//
+            //-----------------------------------------------//
+            facebookoAuth: async (req, res, next) => {
+                // console.log("funciona");
+                //console.log(req.user);
+                const token = signToken(req.user);
+                res.status(200).json({ token });
+            }, //controle de autenticação por facebook
+            //-----------------------------------------------//
+            //-----------------------------------------------//
+
+            googleoAuth: async (req, res, next) => {
+                //console.log("funciona");
+                const token = signToken(req.user);
+                res.status(200).json({ token });
+                //console.log(req.user);
+            }, //controle de autenticação por google
+
+            //-----------------------------------------------//
 
   }

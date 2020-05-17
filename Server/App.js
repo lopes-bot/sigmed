@@ -8,6 +8,7 @@ const session = require("express-session");
 const passport = require("passport");
 require('./src/auth/passport')(passport);
 require('./src/auth/passportface')(passport);
+require('./src/auth/passportgoogle')(passport);
 
 
 //sessão
