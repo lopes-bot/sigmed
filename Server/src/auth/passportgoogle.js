@@ -8,12 +8,12 @@ module.exports = function (passport) {
     new  GoogleStrategy(
       {
         clientID:
-          "973513541331-pifal1l076to1d51a2nbsfl2m84dq8bj.apps.googleusercontent.com",
-        clientSecret: "oMclV_407fDMA_XKQpDTN9OX",
+          "54235386138-lkdiqa84ait3pqf7m7ectrjrc80n0o5a.apps.googleusercontent.com",
+        clientSecret: "xdMQtgjUIWQ0pXCk6GPHnvFG",
       },
       async (accessToken, refreshToken, profile, done) => {
         try {
-          //console.log("profile", profile);
+          console.log("profile", profile._json.picture);
           var existUser = await User.findOne({
             where: {
               social_id: profile.id,
@@ -28,8 +28,8 @@ module.exports = function (passport) {
             };
             novoUser.social_id= profile.id;
             novoUser.nome = profile.displayName;
-            novoUser.email = profile.emails[0].value;
-            novoUser.img = profile.photos[0].value;
+            novoUser.email = profile._json.email;
+            novoUser.img =  profile._json.picture;
             const { social_id, nome, email, img } = novoUser;
             const user = await User.create({
               social_id,

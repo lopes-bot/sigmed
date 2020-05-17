@@ -7,33 +7,34 @@ const UserController = require("../src/controllers/UserController");
 
 
 //rotas para usuarios
+
     //-------------------------------------------------------//
         //rota para criar usuario
         Router.route("/user/cria").post(UserController.store);
 
     //-------------------------------------------------------//
 
-    //router.router("/user/list").get(User)
+        //router.router("/user/list").get(User)
 
     //--------------------------------------------------------//
-    //rota para login do usuario com o facebook
+        //rota para login do usuario com o facebook
 
-        Router
-        .route("/auth/facebook")
-        .post(
-        passport.authenticate("facebookToken", { session: false }),
-        UserController.facebookoAuth
-        );
-    //rota para login do usuario com o google
+            Router
+            .route("/auth/facebook")
+            .post(
+            passport.authenticate("facebookToken", { session: false }),
+            UserController.facebookoAuth
+            );
+        //rota para login do usuario com o google
 
-        Router
-        .route("/auth/google")
-        .post(
-        passport.authenticate("googleToken", { session: false }),
-        UserController.googleoAuth
-        );
+            Router
+            .route("/auth/google")
+            .post(
+            passport.authenticate("googleToken", { session: false }),
+            UserController.googleoAuth
+            );
 
-    //rota para login de usuario com atenticação local do banco de dados da MOP
+
 
     //rota para login de usuario com atenticação local do banco de dados da SigMed
         //rota para autenticação do login usando o passport com estrategia local
@@ -46,11 +47,11 @@ const UserController = require("../src/controllers/UserController");
             })(req, res, next);
         }); 
     //---------------------------------------------------------------------//
-    //rota para logout 
-    Router.get("/logout", (req, res) => {
-        req.logout();
-        res.redirect("/");
-    }); 
+        //rota para logout 
+        Router.get("/logout", (req, res) => {
+            req.logout();
+            res.redirect("/");
+        }); 
 
 
 module.exports = Router;
