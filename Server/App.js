@@ -7,10 +7,7 @@ const AdminUser = require('./router/User');
 const session = require("express-session");
 const passport = require("passport");
 require('./src/auth/passport')(passport);
-
-
-
-
+require('./src/auth/passportface')(passport);
 
 
 //sessão
@@ -25,9 +22,6 @@ app.use(
   app.use(passport.session());
  
   
-
-
-
 
 
 

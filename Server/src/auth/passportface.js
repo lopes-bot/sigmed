@@ -1,5 +1,5 @@
 const FacebookTokenStrategy = require("passport-facebook-token");
-const User = require("../models/User");
+const User = require("../model/user");
 module.exports = function (passport) {
   passport.use(
     "facebookToken",
@@ -10,7 +10,7 @@ module.exports = function (passport) {
       },
       async (accessToken, refreshToken, profile, done) => {
         try {
-          //console.log("profile", profile);s
+          console.log("profile", profile);
           var existUser = await User.findOne({
             where: {
               social_id: profile.id,
