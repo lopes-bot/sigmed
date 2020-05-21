@@ -1,8 +1,7 @@
 import React,{Component} from 'react';
 import Navbar from './Components/Navbar/navbar';
-import Bodyclin from './Components/bodyclin/bodyclin';
-import Footer from './Components/Footer/Footer';
-import Faixa from './Components/faixa/faixa';
+import Body from './Components/body/body';
+
 
 
 
@@ -13,10 +12,8 @@ export default class App extends Component {
     return (
       <div>
         <Navbar />
-        <Bodyclin />
-        <Faixa />
+        <Body />
         
-     
       </div>
     )
   }

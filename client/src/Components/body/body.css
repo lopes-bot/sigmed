@@ -1,0 +1,48 @@
+.h2{
+    text-align: center;
+    color: #4673B7;
+}
+.h4{
+    text-align: left;
+    color:#636161;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+#h4{
+    color: #4673B7;
+    margin-top: 50px;
+}
+.input{
+    border-radius: 20px;
+    margin-left: 15px;
+}
+.butt{
+    color: white ;
+    background-color: #107A88;
+    border-radius: 20px;
+    margin-left: 15px;
+    width: 200px;
+    
+}
+.butt:hover{
+    color: white;
+    background-color: rgb(4, 88, 109);
+}
+.formt{
+    margin: 100px;
+    margin-left: 100px;
+  
+    
+}
+.formI{
+    position: absolute;
+    top: 80px;
+    left: 600px;
+    
+}
+.posit{
+    margin-top: 50px;
+}
+.faixa{
+    background-color: #107A88;
+}
