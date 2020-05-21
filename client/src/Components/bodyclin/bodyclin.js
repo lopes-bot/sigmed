@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './bodyclin.css';
-import Bodycomp from '../bodycomp/bodycomp';
-import Faixa from '../faixa/faixa';
 export default class bodyclin extends Component {
     render() {
         return (
@@ -40,15 +38,6 @@ export default class bodyclin extends Component {
                     </div>
                   
                </div>
-
-               <Faixa />
-               <div className="container">
-                    <Bodycomp />    
-               </div>
-               
-              
-               
-
 
             </div>
 
