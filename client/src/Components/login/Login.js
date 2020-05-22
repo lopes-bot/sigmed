@@ -26,7 +26,7 @@ export default class Login extends Component {
                             <div>
                                 <GoogleLogin
                                     clientId="54235386138-lkdiqa84ait3pqf7m7ectrjrc80n0o5a.apps.googleusercontent.com"
-                                    buttonText="Login"
+                                    buttonText="Login com Google"
                                     onSuccess={this.responseGoogle}
                                     onFailure={this.responseGoogle}
                                     cookiePolicy={'single_host_origin'}
@@ -34,6 +34,7 @@ export default class Login extends Component {
                                  />
                                  <FacebookLogin 
                                      appId="841869212975410"
+                                     textButton="Login com Facebook"
                                      autoLoad={true}
                                      fields="name,email,picture"
                                      onClick={this.responseFacebook}
@@ -41,6 +42,9 @@ export default class Login extends Component {
                                  />
                             </div>
                             <form action="">
+                                <input type="text"/>
+                                <input type="password"/>
+                                <button type="submit">Entra</button>
 
                             </form>
                         </div>
