@@ -64,7 +64,40 @@ export default class body extends Component {
                      </div>
 
                 </div>
-                
+                <div className="row container my-5">
+                    <div className="col-6">
+                        <img className="img-fluid" src="img/nova.png" alt=""/>   
+                    </div>
+                    <div className="col-6 my-5 ">
+                    <h2 className="h2">
+                    Conheça melhor o SigMed e veja o que podemos fazer 
+                    para o sucesso do seu consutório e clínica
+                    </h2>
+                    <p className="p1">
+                    Nós do SigMed Entramos em Contato
+                    </p>
+                    <form action="" className="posit">
+
+                            <div className="form-group">
+                                <input className="form-control input" type="text" name="nome" placeholder="Nome"/>
+                            </div>
+
+                            <div className="form-group">
+                                <input className="form-control input" type="text" name="email" placeholder="Email"/>
+                            </div>
+
+                            <div className="form-group">
+                                <input className="form-control input" type="text" name="telefone" placeholder="Telefone"/>
+                            </div>
+                            
+                            <button className="btn butt" type="submit">Teste Grátis</button>
+
+                        </form>
+
+                    </div>
+                    
+                </div>
+
                 
             </div>
            

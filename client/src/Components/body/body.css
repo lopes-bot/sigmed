@@ -57,8 +57,14 @@
     background-color: #107A88;
     text-align: center;
     color: white;
-    height: 200px;
+    height: 250px;
     padding: 30px;
     padding-top: 80px;
     
+}
+.p1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: larger;
+    color: #636161;
 }
