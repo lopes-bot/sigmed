@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 //import Navbar from '../Navbar/navbar';
 import GoogleLogin from 'react-google-login';
+import FacebookLogin from 'react-facebook-login';
 
 
 
 export default class Login extends Component {
 
     responseGoogle(response){
+        console.log('tag', response);
+    }
+    responseFacebook(response){
         console.log('tag', response);
     }
 
@@ -27,6 +31,13 @@ export default class Login extends Component {
                                     onFailure={this.responseGoogle}
                                     cookiePolicy={'single_host_origin'}
                                 
+                                 />
+                                 <FacebookLogin 
+                                     appId="841869212975410"
+                                     autoLoad={true}
+                                     fields="name,email,picture"
+                                     onClick={this.responseFacebook}
+                                     callback={this.responseFacebook}
                                  />
                             </div>
                             <form action="">
