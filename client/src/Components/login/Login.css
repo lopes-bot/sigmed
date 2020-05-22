@@ -1,0 +1,46 @@
+.login{
+    margin: 200px;
+}
+.facebook{
+    background-color: #3B5998;
+    border-radius: 20px;
+    color: white;
+    border-style: none;
+    height: 35px;
+    width: 250px;
+    margin-top: 10px;
+}
+.facebook:hover{
+    background-color:#107A88 ;
+    color: white;
+}
+.google{
+    background-color: #DD4B39;
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+    height: 35px;
+    width: 250px;
+    margin-top: 10px;
+
+}
+.google:hover{
+    background-color:#107A88 ;
+    color: white;
+
+}
+
+.but-t{
+    background-color:#107A88 ;
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+
+
+}
+#ch{
+    text-align: center;
+    margin-top: 10px;
+}
