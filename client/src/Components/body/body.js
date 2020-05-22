@@ -1,12 +1,29 @@
 import React, { Component } from 'react';
 import "./body.css";
 
+
+
+
 export default class body extends Component {
+
+    sizeOfThings(){
+        var windowWidth = window.innerWidth;
+     
+        if(windowWidth > 980){
+            return "form2 col-lg-6  col-xl-8";
+        }else{
+            return "formI col-lg-6  col-xl-8";
+        }
+    }
+
+
+    
     render() {
         return (
             <div>
+             
                  <div className="container row my-5">
-                    <div className="col-5 formt">
+                    <div className="col-lg-5 formt col-md-10">
                         <h2 className="h2">Software para Consultório e Clínicas Médicas</h2>
                         <h4 className="h4">
                         Sistema para Gerenciamento de Clínicas e consultórios Médicos.
@@ -34,11 +51,20 @@ export default class body extends Component {
 
                         </form>
                     </div>
-                    <div className="col-7 formI">
+                    <div className={this.sizeOfThings()}>
                         <img className="img-fluid" src="img/med.jpg" alt=""/>
                     </div>
+                    
                 
                 </div>
+                <div >
+                    <div className="faixa">
+                         <h2>Tecnologia, Mobilidade, Organização e gestão em 
+                            nosso sistema para sua Clínica e Consultório.</h2>
+                     </div>
+
+                </div>
+                
                 
             </div>
            
