@@ -23,6 +23,8 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 5px;
+    padding-top: 11px;
+    text-decoration: none;
 }
 .but:hover{
     background-color: rgba(50, 189, 207, 0.5);

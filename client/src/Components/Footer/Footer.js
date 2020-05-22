@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './footer.css';
-
+import { Link } from 'react-router-dom';
 
 export default class Footer extends Component {
     render() {
@@ -15,9 +15,9 @@ export default class Footer extends Component {
                        </h6>
                    </div>
                    <div className="col-4">
-                   <a href="#"> <img className="ico" src="img/inst.png" alt=""/></a>
-                   <a href= "#"><img  className="ico" src="img/face.png" alt=""/></a>
-                   <a href="#"> <img className="ico" src="img/whats.png" alt=""/></a>
+                   <Link to="">  <img className="ico" src="img/inst.png" alt=""/></Link>
+                   <Link to= ""><img  className="ico" src="img/face.png" alt=""/></Link>
+                   <Link to=""> <img className="ico" src="img/whats.png" alt=""/></Link>
                  
                         
                        
