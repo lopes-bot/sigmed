@@ -38,7 +38,8 @@ app.use((req, res, next) => {
     next();
  });
   
-
+//conexão com o front
+app.use(express.static(__dirname+ "client"));
 
 
 app.get("/",(req,res)=>{

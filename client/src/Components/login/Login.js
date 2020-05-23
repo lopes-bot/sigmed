@@ -3,6 +3,7 @@ import Navbar from '../Navbar/navbar';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 import Footer from '../Footer/Footer';
+import axios from 'axios';
 import './Login.css';
 
 
@@ -40,10 +41,18 @@ export default class Login extends Component {
     handleSubmit = (event) =>{
        
         event.preventDefault();
-        console.info("states", this.state)
-        
+        const Payload ={
+            "email":this.state.email,
+            "senha":this.state.password
+        }
+      
+        axios.post("/admin/login",Payload).then(res=>{
+            console.log(res);
+        })
         
     }
+
+
 
  
     render() {
