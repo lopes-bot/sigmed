@@ -1,5 +1,12 @@
 .login{
-    margin: 200px;
+    margin: 100px;
+    background-color: rgb(254, 255, 255);
+    width: 380px;
+   position: absolute;
+   top:-30px;
+   left: 790px;
+   height: 590px;
+   
 }
 .facebook{
     background-color: #3B5998;
@@ -7,8 +14,9 @@
     color: white;
     border-style: none;
     height: 35px;
-    width: 250px;
+    width: 300px;
     margin-top: 10px;
+    margin-left: 40px;
 }
 .facebook:hover{
     background-color:#107A88 ;
@@ -20,8 +28,9 @@
     border-radius: 20px;
     border-style: none;
     height: 35px;
-    width: 250px;
+    width: 300px;
     margin-top: 10px;
+    margin-left: 40px;
 
 }
 .google:hover{
@@ -37,10 +46,43 @@
     border-radius: 20px;
     width: 100px;
     height: 30px;
+    margin-left: 40px;
 
-
+}
+.but-t:hover{
+    background-color: rgb(6, 152, 172) ;
+    color: white;
 }
 #ch{
     text-align: center;
+    margin-top: 50px;
+    color: #107A88;
+    
+}
+.cdl{
+    width: 400px;
+}
+.input-t{
+    border-radius: 20px;
+    width: 300px;
+    margin-left: 40px;
+}
+.label{
+    margin-left: 40px;
+    font-weight: 500;
+}
+.log-img{
+    width: 800px;
+    height: 700px;
+    position: absolute;
+    top:50px;
+    left: -110px;
+}
+#ch2{
+    text-align: center;
     margin-top: 10px;
+}
+#ft{
+    position: absolute;
+    top:700px;
 }

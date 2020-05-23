@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-//import Navbar from '../Navbar/navbar';
+import Navbar from '../Navbar/navbar';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
+import Footer from '../Footer/Footer';
 import './Login.css';
 
 
@@ -49,11 +50,15 @@ export default class Login extends Component {
 
         return (
             <div>
-               
-                <div className="container login">
+               <Navbar />
+                <div className="container">
                     <div className="row">
-                        <div className="card ">
-                            <h3 id="ch">SigMed </h3>
+                        <div className="col-6">
+                            <img className="log-img" src="img/doctor.jpg" alt=""/>        
+                        </div>
+                        
+                        <div className="login">
+                            <h2 id="ch">Sistema de Gestão Médica</h2>
                             <div>
                                 <GoogleLogin
                                     clientId="54235386138-lkdiqa84ait3pqf7m7ectrjrc80n0o5a.apps.googleusercontent.com"
@@ -82,30 +87,34 @@ export default class Login extends Component {
                                  />
                             </div>
                             <form onSubmit={this.handleSubmit}>
-                                <div className="form-group">
-                                     <label htmlFor="email">Email:</label>
-                                     <input className="form-control" name="email" type="email" id="email" 
+                                <div className="form-group my-2">
+                                     <label className="label my-2" htmlFor="email">Email:</label>
+                                     <input className="form-control  input-t" name="email" type="email" id="email" 
                                          placeholder="Digite o email" onChange={this.handleEmailChage} />
 
                                 </div>
                                
                                 <div className="form-group">
 
-                                 <label htmlFor="password">Senha:</label>
-                                 <input className="form-control" type="password" name="password" id="password" 
+                                 <label className="label" htmlFor="password">Senha:</label>
+                                 <input className="form-control input-t" type="password" name="password" id="password" 
                                      placeholder="Digite sua senha"  onChange={this.handlePasswordChage}  />
                                 </div>
 
                                 <button className="but-t"  type="submit">Entrar</button>
                             </form>
                             <div>
-                                <h6 id="ch">Cadastre-se</h6>
-                                <p id="ch">Esqueceu Sua Senha?</p>
+                                <h6 id="ch2">Cadastre-se</h6>
+                                <p id="ch2">Esqueceu Sua Senha?</p>
                             </div>
                         </div>
+                        
 
                     </div>
 
+                </div>
+                <div id="ft">
+                   <Footer /> 
                 </div>
                
 
