@@ -48,6 +48,13 @@ export default class Login extends Component {
       
         axios.post("/admin/login",Payload).then(res=>{
             console.log(res);
+            if(res.status === 200){
+               
+                this.props.history.push("/")
+               
+            }
+            
+            
         })
         
     }
